@@ -6,10 +6,15 @@ const UseStateHook = () => {
     const incrementCount = () =>{
         setCount(count + 1)
     }
+    const decrementCount = () =>{
+        setCount(count - 1)
+    }
 
   return (
     <div>
-        <button onClick={incrementCount}>Count {count}</button>
+        <button onClick={incrementCount}>Increase </button>
+            {count}
+        <button onClick={decrementCount}>Decrease </button>
     </div>
   )
 }
